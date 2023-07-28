@@ -1,12 +1,14 @@
 # NEON-visualization
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/NCAR/NEON-visualization.git/main)
 
+[![Docker Pulls](https://img.shields.io/docker/pulls/escomp/ctsm-lab-2.3-preview)](https://hub.docker.com/r/escomp/ctsm-lab-2.3-preview)
+
 Repository to include all neon-related visualization scripts. 
 
 --------------
 To install all required libraries:
 ```
-conda create --name neon -c conda-forge python=3.9 numpy scipy matplotlib pandas netcdf4 jupyter xarray tqdm bokeh jupyterlab
+conda env create --name neon -f environment.yml
 conda activate neon
 ```
 --------------
